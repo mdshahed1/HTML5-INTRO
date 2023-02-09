@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitha Form</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .border{
+            border: 1px solid rgba(0, 0, 0, 0.363);
+            border-radius: 3px;
+        }
+        .fieldset{
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="tabel.html">Table</a></li>
+            <li><a href="semantic.html">Semantic</a></li>
+            <li><a href="audio-video.html">Media</a></li>
+        </ul>
+    </nav>
+    <h2>Welcome to Jamal er Ma Pitha Ghor</h2>
+    <form action="">
+        <label for="name">Your name
+            <input class="border" type="text" name="name" id="name" placeholder="Your Name">
+        </label>
+        <label for="email">Your email
+            <input class="border" type="email" name="email" id="email" placeholder="Your Email">
+        </label>
+        <label for="phone">Your Mobile
+            <input class="border" type="tel" name="mobile" id="phone" placeholder="Your Phone Number">
+        </label>
+        <fieldset class="fieldset">
+            <legend>Pick One Pitha</legend>
+            <label for="chitoy">
+                <input type="radio" name="pitha" id="chitoy">Chitoy
+            </label>
+            <label for="vapa">
+                <input type="radio" name="pitha" id="vapa">Vapa
+            </label>
+            <label for="coconut">
+                <input type="radio" name="pitha" id="coconut">Coconut
+            </label>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Select one or more Vortas</legend>
+            <label for="sorisa">
+                <input type="checkbox" name="vortas" id="sorisa">Sorisa
+            </label>
+            <label for="shutki">
+                <input type="checkbox" name="vortas" id="shutki">Shutki
+            </label>
+            <label for="dal">
+                <input type="checkbox" name="vortas" id="dal">Dal
+            </label>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Special Instruction</legend>
+            <textarea name="message" id="" cols="50" rows="5"></textarea>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
